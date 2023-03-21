@@ -1,0 +1,87 @@
+/*Alt + shift + a = comentario rapido */
+/* control + k + c = comentario rapido */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+margin: 0;
+}
+body{
+    background-color:rgb(238, 238, 247);
+}
+
+h2{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    animation-name: left-to-right;
+    animation-duration: 2s ;
+    opacity:0.5;
+}
+
+a{
+    color:blue;
+text-decoration: none;
+}
+nav a:hover{
+    color: red;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(2, 2, 85);
+    padding: 20px 150px;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 25px rgba(15, 14, 14, 0.545);
+    opacity: 1;
+}
+nav{
+    display:flex;
+    gap: 60PX;
+}
+@keyframes left-to-right{
+    0%{
+        transform: translatex(-500px); 
+        opacity: 0;
+    }
+    100%{
+        transform: translatex(0px);
+        opacity: 1;
+    }
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: darkolivegreen;
+    border:5px orange solid;
+    border-top:5px white dashed;
+    border-radius: 10px ;
+    border-bottom-left-radius: 60px;
+    margin: 40px 20px;
+    padding:20px ;
+    text-align: center;
+    animation-name: left-to-right;
+    animation-duration: 2s ;
+}
+
+.caja:hover{
+    transition: 1S ease-in;
+    background-color: blue;
+}
+.auto{
+   /*   opacity: 0.8; */
+   filter:brightness(0.5);
+   width: 200px;
+   
+}
+
+.auto:hover{
+    transition: 1s ease-in;
+   /* opacity: 1; */
+   filter:brightness(1)
+    
+}
